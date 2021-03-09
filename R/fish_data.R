@@ -4,7 +4,7 @@
 #' @format A data frame with 300 rows and 1 column
 #' @author Naomi Tague
 #' \describe{
-#' \item{x}{fish species}}
-#' fish_data
+#' \item{x}{fish species}
+#' }
+"fish_data"
 
-##lg not sure about this format, check against Naomi's example. This is just a starting point.

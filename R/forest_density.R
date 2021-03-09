@@ -1,8 +1,14 @@
-# This function allows the user to determine how many days would be needed for a thinning project to reduce YPMC forest from current to historic conditions for a specified number of plots.
-
-# day = number of days needed for desired thinning project (default starting time is day 0)
-# plots = number of plots to perform analysis (each plot is 1 ha)
-# original_density = starting tree density (trees/ha)
+#' Forest thinning function
+#'
+#' This function allows the user to determine how many days would be needed for a thinning project to reduce YPMC forest from current to historic conditions for a specified number of plots.
+#' @param day Day forest thinning project will end. Default starting day is day 0.
+#' @param plots Number of plots interested in thinning. Each plot is 1 ha.
+#' @param original_density starting average tree density of all plots (trees/ha). Default density is 350 trees/ha.
+#' @return Number of days needed to thin all specified plots down to historic densities.
+#' @examples
+#' thinning(plots=4)
+#' thinning(day=0, plots=10, original_density=400)
+#' @author Leana Goetze
 
 # Create function
 thinning = function(day=0, plots, original_density = 350) {
